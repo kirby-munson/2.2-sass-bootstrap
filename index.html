@@ -8,7 +8,7 @@
   <body>
     <div class="bg container-fluid">
       <div class="row"> <!-- container of the whole page, with bgimage -->
-        <div class="blue col-md-offset-3 col-md-6"> <!-- container of the content -->
+        <div class="col-md-offset-3 col-md-6"> <!-- container of the content -->
           <div class="row"> <!-- search/sociallinks -->
             <span class="col-md-offset-6 col-md-2">Search</span>
             <div class="social col-md-offset-8 col-md-4">
@@ -20,13 +20,13 @@
               </ul>
             </div>
           </div>
-          <div class="social red row"> <!-- nav bar -->
+          <div class="navigation row"> <!-- nav bar -->
             <nav class="col-md-12">
               <ul>
-                <li class="blue col-md-3">skate</li>
-                <li class="blue col-md-3">home</li>
-                <li class="blue col-md-3">time</li>
-                <li class="blue col-md-3">hello</li>
+                <li class="btn btn-default col-md-3">skate</li>
+                <li class="btn btn-default col-md-3">home</li>
+                <li class="btn btn-default col-md-3">time</li>
+                <li class="btn btn-default col-md-3">hello</li>
               </ul>
             </nav>
           </div>
@@ -104,12 +104,21 @@
                   nisi ut aliquip ex ea commodo consequat.</p>
               </div>
               <div class="col-md-6">
-                <h3>Contact Us for More Information</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                  nisi ut aliquip ex ea commodo consequat.</p>
-              </div>
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputName2"></label>
+                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1"></label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
           </div>
         </div>
       </div>
