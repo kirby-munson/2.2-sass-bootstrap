@@ -3,40 +3,116 @@
   <head>
     <meta charset="utf-8">
     <title>SASS + Bootstrap</title>
-
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <div class="container">
-
-<section>
-  <nav>
-    <ul>
-      <li><a class="btn btn-primary" href="#">LInk</a></li>
-      <li><a href=""><i class="glyphicon glyphicon-star"></i>LINk</a></li>
-      <li><a href="">LInk</a></li>
-    </ul>
-  </nav>
-</section>
-
-<div class="row">
-  <div class="col-md-8">
-    <div class="col-md-6">
-      <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+    <div class="bg container-fluid">
+      <div class="row"> <!-- container of the whole page, with bgimage -->
+        <div class="blue col-md-offset-3 col-md-6"> <!-- container of the content -->
+          <div class="row"> <!-- search/sociallinks -->
+            <span class="col-md-offset-6 col-md-2">Search</span>
+            <div class="social col-md-offset-8 col-md-4">
+              <ul>
+                <li><img src="#" /></li>
+                <li><img src="#" /></li>
+                <li><img src="#" /></li>
+                <li><img src="#" /></li>
+              </ul>
+            </div>
+          </div>
+          <div class="social red row"> <!-- nav bar -->
+            <nav class="col-md-12">
+              <ul>
+                <li class="blue col-md-3">skate</li>
+                <li class="blue col-md-3">home</li>
+                <li class="blue col-md-3">time</li>
+                <li class="blue col-md-3">hello</li>
+              </ul>
+            </nav>
+          </div>
+          <div class="row"> <!-- header -->
+            <div class="header col-md-12">
+              <img src="/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/grid.png" />
+            </div>
+          </div>
+          <div class="white row"> <!-- cards -->
+            <div class="col-md-12">
+              <div class="col-md-4">
+                <h5>Tony Hawk Foundation Raises Big Money At Celeb Fundraiser</h5>
+                <span>October 10, 2013</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, </p>
+                  <a href="#">Read More</a>
+              </div>
+              <div class="col-md-4">
+                <h5>Tony Hawk Foundation Raises Big Money At Celeb Fundraiser</h5>
+                <span>October 10, 2013</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, </p>
+                  <a href="#">Read More</a>
+              </div>
+              <div class="col-md-4">
+                <h5>Tony Hawk Foundation Raises Big Money At Celeb Fundraiser</h5>
+                <span>October 10, 2013</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, </p>
+                  <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="skaters row"> <!-- skaters -->
+            <div class="col-md-8">
+              <div class="col-md-6">
+                <img src="/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/sk8er-4.png" />
+              </div>
+              <div class="col-md-6">
+                <img src="/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/sk8er-3.png" />
+              </div>
+              <div class="col-md-12">
+                <img src="/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/sk8er-1.png" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/sk8er-2.png" />
+            </div>
+          </div>
+          <div class="row"> <!-- skateboards-->
+            <div class="white col-md-12">
+              <ul>
+                <li><img src="/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/sk8-1.png" /></li>
+                <li><img src="/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/sk8-2.png" /></li>
+                <li><img src="/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/sk8-3.png" /></li>
+                <li><img src="/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/sk8-4.png" /></li>
+                <li><img src="/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/sk8-5.png" /></li>
+                <li><img src="/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/sk8-6.png" /></li>
+                <li><img src="/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/sk8-7.png" /></li>
+                <li><img src="/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/sk8-8.png" /></li>
+                <li><img src="/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/sk8-9.png" /></li>
+                <li><img src="/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/sk8-10.png" /></li>
+              </ul>
+            </div>
+          </div>
+          <div class="form row"> <!-- form -->
+              <div class="red col-md-6">
+                <h3>Contact Us for More Information</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+              <div class="col-md-6">
+                <h3>Contact Us for More Information</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+          </div>
+        </div>
+      </div>
     </div>
-  <div class="col-md-6">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-<div class="col-md-12">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
-</div>
-  <div class="col-md-4">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-</div>
-</div>
   </body>
 </html>

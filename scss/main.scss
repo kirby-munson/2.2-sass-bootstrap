@@ -1,14 +1,100 @@
 //Bootstrap variables
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
-$grid-gutter-width: 15px;
+$red: red;
+$blue: blue;
+$white: white;
+$grid-gutter-width: 10px;
 
 //Install Bootstrap
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
+// background
 
+.bg {
+  background-image: url("/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-nav {
-  ul{
-    list-style-type: none;
+// content
+
+// nav
+
+.social {
+  display: inline;
+}
+
+div {
+  ul {
+    width: 100%;
+  }
+  li{
+    text-decoration: none;
+    display: inline;
   }
 }
+
+div {
+  ul {
+    width: 100%;
+  }
+  li{
+    text-decoration: none;
+    display: inline;
+  }
+}
+
+// header
+
+.blue {
+  background-color: lighten($blue, 20);
+}
+
+.header {
+  background-image: url("/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/top-image.png");
+  background-size: cover;
+  height: 200px;
+  max-width: 100%;
+}
+
+.header img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border: 6px solid white;
+}
+
+// cards
+
+// skaters
+
+.skaters {
+  max-width: 100%;
+}
+
+.skaters img {
+  display: inline-block;
+  max-width: 100%;
+  border: 4px solid white;
+}
+
+//skateboards
+
+.white {
+  background-color: $white;
+  width: 100%;
+}
+
+.white ul {
+  width: 100%;
+}
+
+.white li {
+  display: inline;
+}
+
+.white img {
+  width: 7%;
+}
+
+//form
