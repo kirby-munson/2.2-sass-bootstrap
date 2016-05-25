@@ -5812,60 +5812,210 @@ button.close {
 .bg {
   background-image: url("/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/bg.jpg");
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  position: relative; }
+
+#base {
+  background: red;
+  display: inline-block;
+  height: 56px;
+  margin-left: 20px;
+  margin-top: 55px;
+  position: relative;
+  width: 100px; }
+
+#base:before {
+  border-bottom: 28px solid transparent;
+  border-top: 28px solid transparent;
+  border-left: 20px solid red;
+  content: "";
+  height: 0;
+  left: 100px;
+  position: absolute;
+  top: 0px;
+  width: 0; }
+
+div.arrow {
+  position: absolute;
+  top: 40%;
+  left: 150px; }
 
 .social {
-  display: inline; }
+  text-transform: uppercase; }
+  .social li {
+    display: inline; }
+  .social img {
+    width: 20%; }
+  .social div {
+    width: 10%;
+    height: 10%;
+    display: inline; }
 
+.red {
+  background-color: #B4292E; }
+
+.blue {
+  background-color: #435796; }
+
+.orange {
+  background-color: #CB8F32; }
+
+.lightblue {
+  background-color: #6A8DC6; }
+
+.navigation div.button {
+  padding: 20px;
+  display: inline-block; }
 .navigation ul {
-  width: 100%;
-  padding: 0; }
+  list-style: none;
+  -webkit-padding-start: 0; }
 .navigation li {
   text-decoration: none;
-  display: inline; }
+  text-transform: uppercase;
+  color: white; }
+.navigation a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: #B4292E;
+  width: 124px;
+  height: 20px; }
+  .navigation a::before, .navigation a::after {
+    content: "\2014";
+    color: white; }
 
-.btn {
+li.square {
   border-radius: 0;
   border-color: #B4292E; }
 
-.btn-default {
-  background-color: #B4292E;
+.square {
   color: white; }
 
-.blue {
-  background-color: #6666ff; }
+.anchor1,
+.anchor2,
+.anchor3 {
+  margin-right: 15px; }
 
 .header {
   background-image: url("/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/top-image.png");
   background-size: cover;
   height: 220px;
-  max-width: 100%; }
-
-.header img {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  border: 6px solid white; }
-
-.skaters {
-  max-width: 100%; }
-
-.skaters img {
-  display: inline-block;
   max-width: 100%;
-  border: 4px solid white; }
+  border: 6px solid white;
+  position: relative; }
+  .header:before {
+    content: "";
+    background-image: url("/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/grid.png");
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; }
+
+.logo_sticker {
+  position: relative;
+  width: 250px;
+  padding-top: 20px; }
+
+.cardwidth h5 {
+  font-size: 20px; }
 
 .white {
-  background-color: white;
+  padding: 10px 10px 10px 10px; }
+
+.white a {
+  display: block;
+  color: #B4292E;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 auto; }
+
+div.car-1 {
+  display: inline-block;
+  padding: 5px 5px 5px 0; }
+
+div.car-2 {
+  display: inline-block;
+  padding: 5px 5px; }
+
+div.car-3 {
+  display: inline-block;
+  padding: 5px 0px 5px 5px; }
+
+.border4 {
+  padding: 10px 10px 10px 0; }
+
+.border3 {
+  padding: 10px 10px 10px 0; }
+
+.border1 {
+  padding: 10px 10px 10px 0; }
+
+.border2 {
+  padding: 10px 10px 10px 0; }
+
+div.four {
+  background-image: url("/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/sk8er-4.png");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  border: 4px solid white;
+  background-position: top right, 0px 0px;
+  background-size: 130%; }
+
+div.three {
+  background-image: url("/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/sk8er-3.png");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  border: 4px solid white; }
+
+div.one {
+  background-image: url("/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/sk8er-1.png");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  border: 4px solid white;
+  height: 200px; }
+
+div.two {
+  background-image: url("/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/sk8er-2.png");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  border: 4px solid white;
+  height: 335px;
+  background-size: 260%;
+  background-position: 230px 0px; }
+
+.white {
+  background-color: white; }
+
+.board1 {
+  padding-left: 0; }
+
+.skateboards {
   width: 100%; }
 
-.white ul {
-  width: 100%; }
+.skateboards ul {
+  width: 100%;
+  margin: 0 60px; }
 
-.white li {
+.skateboards li {
   display: inline; }
 
-.white img {
+.skateboards img {
   width: 7%; }
+
+@media (max-width: 450px) {
+  .skateboards img {
+    display: block;
+    transform: rotate(90deg);
+    width: 15%;
+    margin: -130px auto; } }
 
 /*# sourceMappingURL=main.css.map */

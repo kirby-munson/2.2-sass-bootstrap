@@ -4,85 +4,102 @@
     <meta charset="utf-8">
     <title>SASS + Bootstrap</title>
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
   </head>
   <body>
     <div class="bg container-fluid">
+      <div class="arrow">
+      <div id="base"><span>Skateboarders</span></div>
+    </div>
       <div class="row"> <!-- container of the whole page, with bgimage -->
         <div class="col-md-offset-3 col-md-6"> <!-- container of the content -->
           <div class="row"> <!-- search/sociallinks -->
-            <span class="col-md-offset-6 col-md-2">Search</span>
+            <span class="col-md-offset-6 col-md-2">Subscribe</span>
             <div class="social col-md-offset-8 col-md-4">
               <ul>
-                <li><img src="#" /></li>
-                <li><img src="#" /></li>
-                <li><img src="#" /></li>
-                <li><img src="#" /></li>
+                <li><a href="#"><div class="blue"><i class="fa fa-facebook" aria-hidden="true"></i></div></a></li>
+                <li><a href="#"><div class="orange"><i class="fa fa-rss" aria-hidden="true"></i></div></a></li>
+                <li><a href="#"><div class="lightblue"><i class="fa fa-twitter" aria-hidden="true"></i></div></a></li>
+                <li><a href="#"><div class="red"><i class="fa fa-youtube" aria-hidden="true"></i></div></a></li>
               </ul>
             </div>
           </div>
           <div class="navigation row"> <!-- nav bar -->
-            <nav class="col-md-12">
-              <ul>
-                <li class="btn btn-default col-md-3">skate</li>
-                <li class="btn btn-default col-md-3">home</li>
-                <li class="btn btn-default col-md-3">time</li>
-                <li class="btn btn-default col-md-3">hello</li>
-              </ul>
+            <nav>
+                <div class="button"><a class="anchor1" href="#">Sk8t News</a></div>
+                <div class="button"><a class="anchor2" href="#">Skateboarders</a></div>
+                <div class="button"><a class="anchor3" href="#">Board Design</a></div>
+                <div class="button"><a class="anchor4" href="#">Contact Us</a></div>
             </nav>
           </div>
           <div class="row"> <!-- header -->
-            <div class="header col-md-12">
-              <img src="/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/grid.png" />
-            </div>
+            <div class="header">
+                <img class="logo_sticker" src="/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/peralta-logo.png" />
+              </div>
           </div>
-          <div class="white row"> <!-- cards -->
-            <div class="col-md-12">
-              <div class="col-md-4">
+          <div class="row"> <!-- cards -->
+            <div class="cardwidth col-md-12">
+              <div class="car-1 col-md-4">
+              <div class="white cards">
                 <h5>Tony Hawk Foundation Raises Big Money At Celeb Fundraiser</h5>
                 <span>October 10, 2013</span>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, </p>
-                  <a href="#">Read More</a>
+                  Ut enim ad minim veniam. </p>
+                  <a href="#">[ Read More ]</a>
+                </div>
               </div>
-              <div class="col-md-4">
-                <h5>Tony Hawk Foundation Raises Big Money At Celeb Fundraiser</h5>
-                <span>October 10, 2013</span>
+              <div class="car-2 col-md-4">
+              <div class="white cards">
+                <h5>Rodney Mullen: Pop an ollie and innovate! (TED Talk)</h5>
+                <span>March 10, 2013</span>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, </p>
-                  <a href="#">Read More</a>
+                  Ut enim ad minim veniam. </p>
+                  <a href="#">[ Read More ]</a>
+                </div>
               </div>
-              <div class="col-md-4">
-                <h5>Tony Hawk Foundation Raises Big Money At Celeb Fundraiser</h5>
-                <span>October 10, 2013</span>
+              <div class="car-3 col-md-4">
+              <div class="white cards">
+                <h5>Ray Barbee Talks 'Ban This'</h5>
+                <span>October 4, 2013</span>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, </p>
-                  <a href="#">Read More</a>
+                  Ut enim ad minim veniam,ut labore et dolore magna aliqua.
+                  Ut enim. </p>
+                  <a href="#">[ Read More ]</a>
+                </div>
               </div>
             </div>
           </div>
           <div class="skaters row"> <!-- skaters -->
             <div class="col-md-8">
-              <div class="col-md-6">
-                <img src="/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/sk8er-4.png" />
+              <div class="border4 col-md-6">
+                <div class="four">
+                <h1> Lance Mountain </h1>
               </div>
-              <div class="col-md-6">
-                <img src="/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/sk8er-3.png" />
               </div>
-              <div class="col-md-12">
-                <img src="/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/sk8er-1.png" />
+              <div class="border3 col-md-6">
+                <div class="three">
+                <h1> Rodney Mullen </h1>
+              </div>
+              </div>
+              <div class="border1 col-md-12">
+                <div class="one">
+                <h1> Steve Caballero </h1>
+              </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <img src="/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/sk8er-2.png" />
+            <div class="border2 col-md-4">
+              <div class="two">
+              <h1> Tommy Guerrero </h1>
             </div>
           </div>
+          </div>
           <div class="row"> <!-- skateboards-->
-            <div class="white col-md-12">
+            <div class="skateboards white col-xs-2 col-md-12">
               <ul>
-                <li><img src="/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/sk8-1.png" /></li>
+                <li class="board1"><img src="/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/sk8-1.png" /></li>
                 <li><img src="/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/sk8-2.png" /></li>
                 <li><img src="/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/sk8-3.png" /></li>
                 <li><img src="/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/sk8-4.png" /></li>
@@ -95,13 +112,21 @@
               </ul>
             </div>
           </div>
-          <div class="form row"> <!-- form -->
-              <div class="red col-md-6">
+          <div class="white form row"> <!-- form -->
+              <div class="col-md-6">
                 <h3>Contact Us for More Information</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                   nisi ut aliquip ex ea commodo consequat.</p>
+              <div class="social col-md-6">
+                <ul>
+                  <li><a href="#"><div class="blue"><i class="fa fa-facebook" aria-hidden="true"></i></div></a></li>
+                  <li><a href="#"><div class="orange"><i class="fa fa-rss" aria-hidden="true"></i></div></a></li>
+                  <li><a href="#"><div class="lightblue"><i class="fa fa-twitter" aria-hidden="true"></i></div></a></li>
+                  <li><a href="#"><div class="red"><i class="fa fa-youtube" aria-hidden="true"></i></div></a></li>
+                </ul>
+              </div>
               </div>
               <div class="col-md-6">
                 <form>
