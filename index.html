@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>SASS + Bootstrap</title>
     <link rel="stylesheet" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/font-awesome.min.css" />
   </head>
   <body>
@@ -14,13 +15,13 @@
       <div class="row"> <!-- container of the whole page, with bgimage -->
         <div class="col-md-offset-3 col-md-6"> <!-- container of the content -->
           <div class="row"> <!-- search/sociallinks -->
-            <span class="col-md-offset-6 col-md-2">Subscribe</span>
-            <div class="social col-md-offset-8 col-md-4">
+            <span class="sub col-md-offset-7 col-md-2">Subscribe</span>
+            <div class="social col-md-offset-9 col-md-4">
               <ul>
-                <li><a href="#"><div class="blue"><i class="fa fa-facebook" aria-hidden="true"></i></div></a></li>
-                <li><a href="#"><div class="orange"><i class="fa fa-rss" aria-hidden="true"></i></div></a></li>
-                <li><a href="#"><div class="lightblue"><i class="fa fa-twitter" aria-hidden="true"></i></div></a></li>
-                <li><a href="#"><div class="red"><i class="fa fa-youtube" aria-hidden="true"></i></div></a></li>
+                <li><a href="#"><div class="blue"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></div></a></li>
+                <li><a href="#"><div class="orange"><i class="fa fa-rss fa-2x" aria-hidden="true"></i></div></a></li>
+                <li><a href="#"><div class="lightblue"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></div></a></li>
+                <li><a href="#"><div class="red"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></div></a></li>
               </ul>
             </div>
           </div>
@@ -32,41 +33,59 @@
                 <div class="button"><a class="anchor4" href="#">Contact Us</a></div>
             </nav>
           </div>
-          <div class="row"> <!-- header -->
+          <div class="top row"> <!-- header -->
             <div class="header">
                 <img class="logo_sticker" src="/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/peralta-logo.png" />
               </div>
           </div>
+          <div class="row">
+            <div class="circles">
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <i class="fa fa-circle" aria-hidden="true"></i>
+          </div>
+        </div>
           <div class="row"> <!-- cards -->
             <div class="cardwidth col-md-12">
               <div class="car-1 col-md-4">
               <div class="white cards">
-                <h5>Tony Hawk Foundation Raises Big Money At Celeb Fundraiser</h5>
-                <span>October 10, 2013</span>
+                <span class="title">Tony Hawk Foundation Raises Big Money At Celeb Fundraiser</span>
+                  <br/>
+                    <br/>
+                <span class="date">October 10, 2013</span>
+                  <br/>
+                  <br/>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam. </p>
+                  </p>
                   <a href="#">[ Read More ]</a>
                 </div>
               </div>
               <div class="car-2 col-md-4">
               <div class="white cards">
-                <h5>Rodney Mullen: Pop an ollie and innovate! (TED Talk)</h5>
-                <span>March 10, 2013</span>
+                <span class="title">Rodney Mullen: Pop an ollie and innovate! (TED Talk)</span>
+                  <br/>
+                  <br/>
+                <span class="date">March 10, 2013</span>
+                  <br/>
+                  <br/>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam. </p>
+                 </p>
                   <a href="#">[ Read More ]</a>
                 </div>
               </div>
               <div class="car-3 col-md-4">
               <div class="white cards">
-                <h5>Ray Barbee Talks 'Ban This'</h5>
-                <span>October 4, 2013</span>
+                <span class="title">Ray Barbee Talks 'Ban This'</span>
+                  <br/>
+                    <br/>
+                <span class="date">October 4, 2013</span>
+                  <br/>
+                <br/>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam,ut labore et dolore magna aliqua.
-                  Ut enim. </p>
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua. Yet ji kewl timez.
+                  </p>
                   <a href="#">[ Read More ]</a>
                 </div>
               </div>
@@ -76,28 +95,28 @@
             <div class="col-md-8">
               <div class="border4 col-md-6">
                 <div class="four">
-                <h1> Lance Mountain </h1>
+                <h2> Lance Mountain </h2>
               </div>
               </div>
               <div class="border3 col-md-6">
                 <div class="three">
-                <h1> Rodney Mullen </h1>
+                <h2> Rodney Mullen </h2>
               </div>
               </div>
               <div class="border1 col-md-12">
                 <div class="one">
-                <h1> Steve Caballero </h1>
+                <h2> Steve Caballero </h2>
               </div>
               </div>
             </div>
             <div class="border2 col-md-4">
               <div class="two">
-              <h1> Tommy Guerrero </h1>
+              <span><h2> Tommy Guerrero </h2></span>
             </div>
           </div>
           </div>
           <div class="row"> <!-- skateboards-->
-            <div class="skateboards white col-xs-2 col-md-12">
+            <div class="skateboards skatewhite col-xs-2 col-md-12">
               <ul>
                 <li class="board1"><img src="/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/sk8-1.png" /></li>
                 <li><img src="/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/sk8-2.png" /></li>
@@ -112,21 +131,13 @@
               </ul>
             </div>
           </div>
-          <div class="white form row"> <!-- form -->
+          <div class="whiteform form row"> <!-- form -->
               <div class="col-md-6">
-                <h3>Contact Us for More Information</h3>
+                <h4>Contact Us for More Information</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                   nisi ut aliquip ex ea commodo consequat.</p>
-              <div class="social col-md-6">
-                <ul>
-                  <li><a href="#"><div class="blue"><i class="fa fa-facebook" aria-hidden="true"></i></div></a></li>
-                  <li><a href="#"><div class="orange"><i class="fa fa-rss" aria-hidden="true"></i></div></a></li>
-                  <li><a href="#"><div class="lightblue"><i class="fa fa-twitter" aria-hidden="true"></i></div></a></li>
-                  <li><a href="#"><div class="red"><i class="fa fa-youtube" aria-hidden="true"></i></div></a></li>
-                </ul>
-              </div>
               </div>
               <div class="col-md-6">
                 <form>
@@ -141,7 +152,7 @@
                   <div class="form-group">
                     <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
                   </div>
-                  <button type="submit" class="btn btn-default">Submit</button>
+                  <button type="submit" class="submit btn btn-default">Submit</button>
                 </form>
             </div>
           </div>

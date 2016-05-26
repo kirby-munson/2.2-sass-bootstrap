@@ -14,31 +14,35 @@ $grid-gutter-width: 10px;
 
 // background
 
+
 .bg {
-  background-image: url("/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/bg.jpg);
+
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-
-
 #base {
-  background: red;
+  background: $red;
   display: inline-block;
   height: 56px;
   margin-left: 20px;
   margin-top: 55px;
     position: relative;
-    width: 100px;
+    width: 135px;
 }
 #base:before {
   border-bottom: 28px solid transparent;
   border-top: 28px solid transparent;
-  border-left: 20px solid red;
+  border-left: 20px solid $red;
   content: "";
   height: 0;
-  left: 100px;
+  left: 135px;
   position: absolute;
   top: 0px;
   width: 0;
@@ -47,7 +51,17 @@ $grid-gutter-width: 10px;
 div.arrow {
   position: absolute;
   top:40%;
-  left: 150px;
+  left: 160px;
+}
+
+div.arrow span {
+  text-align: center;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: $white;
+  vertical-align: middle;
+  line-height: 55px;
+  padding-left: 5px;
 }
 
 
@@ -55,21 +69,32 @@ div.arrow {
 
 // nav
 
-.social {
+span.sub {
+  display: inline;
+  color: white;
   text-transform: uppercase;
+}
+
+.social {
   li {
     display: inline;
   }
-
-  img {
-    width: 20%;
-  }
-
   div {
-    width: 10%;
-    height: 10%;
-    display: inline;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    padding: 5px 0px 2px 5px;
+    border-bottom: 3px solid rgba(167, 171, 176, .3);
   }
+}
+
+.social ul {
+  padding: 0;
+}
+
+.fa {
+  color: white;
+  padding: 2px 2px 2px 2px;
 }
 
 .red {
@@ -90,7 +115,7 @@ div.arrow {
 
 .navigation{
   div.button{
-    padding: 20px;
+    padding: 4px 4px 12px 4px;
     display: inline-block;
   }
     ul {
@@ -107,13 +132,19 @@ div.arrow {
       color: $white;
       text-decoration: none;
       background-color: $red;
-      width: 124px;
-      height: 20px;
+      width: 165px;
+      height: 28px;
+      line-height: 28px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 12px;
+      border-bottom: 3px solid rgba(167, 171, 176, .3);
 
       &::before,
       &::after {
         content: "\2014";
             color: $white;
+            padding: 0 10px;
       }
     }
 }
@@ -131,17 +162,31 @@ li.square {
 .anchor1,
 .anchor2,
 .anchor3 {
-  margin-right: 15px;
+  margin-right: 5px;
 }
+
 
 
 // header
 
+div.top {
+  padding-bottom: 10px;
+}
 
+div.circles {
+  display: table;
+  margin: 0 auto;
+}
+.fa-circle {
+  color:white;
+  margin: 0 auto;
+}
 
 .header {
   background-image: url("/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/top-image.png");
-  background-size: cover;
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: 90px -85px;
   height: 220px;
   max-width: 100%;
   border: 6px solid white;
@@ -149,6 +194,7 @@ li.square {
   &:before {
     content: "";
     background-image: url('/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/grid.png');
+
     position: absolute;
     top:0;
     bottom:0;
@@ -160,25 +206,28 @@ li.square {
 
 .logo_sticker {
   position: relative;
-  width:250px;
-  padding-top: 20px;
+  width:320px;
+  padding: 20px 10px 10px 20px;
 }
-
-// .header .grid {
-//   display: inline-block;
-//   width: 100%;
-//   height: 100%;
-// }
-
 
 
 // cards
 
-.cardwidth h5 {
- font-size: 20px;
+.cardwidth span.date {
+ font-size: 15px;
+ color: #ddd;
+}
+
+div.cards {
+  height: 275px;
+}
+
+.cardwidth span.title {
+  font-size: 20px;
 }
 
 .white {
+  background-color: white;
   padding: 10px 10px 10px 10px;
 }
 
@@ -218,11 +267,11 @@ div.car-3 {
 }
 
 .border1 {
-  padding:10px 10px 10px 0;
+  padding:0 10px 10px 0;
 }
 
 .border2 {
-  padding:10px 10px 10px 0;
+  padding:10px 5px 10px 0;
 }
 
 div.four {
@@ -230,10 +279,13 @@ div.four {
   background-size: cover;
   color: $white;
   text-align: center;
+  font-family: 'Archivo Black', sans-serif;
   text-transform: uppercase;
   border: 4px solid white;
   background-position: top right, 0px 0px;
   background-size: 130%;
+  height: 150px;
+  padding-top: 15px;
 }
 
 div.three {
@@ -241,8 +293,12 @@ div.three {
   background-size: cover;
   color: $white;
   text-align: center;
+  font-family: 'Archivo Black', sans-serif;
   text-transform: uppercase;
+  background-size: 120%;
   border: 4px solid white;
+  height: 150px;
+  padding-top: 15px;
 }
 
 div.one {
@@ -250,9 +306,17 @@ div.one {
   background-size: cover;
   color: $white;
   text-align: center;
+  font-family: 'Archivo Black', sans-serif;
   text-transform: uppercase;
   border: 4px solid white;
-  height: 200px;
+  background-size: 100%;
+  background-position: 0px -60px;
+  height: 150px;
+}
+
+div.one h2 {
+  line-height: 100px;
+  vertical-align: middle;
 }
 
 div.two {
@@ -262,46 +326,76 @@ div.two {
   text-align: center;
   text-transform: uppercase;
   border: 4px solid white;
-  height: 335px;
-  background-size: 260%;
-  background-position: 230px 0px;
+  font-family: 'Archivo Black', sans-serif;
+  height: 310px;
+  background-size: 240%;
+  background-position: 300px -10px;
+  padding-top: 85px;
 }
 
 //skateboards
 
-.white {
-  background-color: $white;
-}
-
-.board1 {
-  padding-left: 0;
-}
 
 .skateboards {
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .skateboards ul {
   width: 100%;
-  margin: 0 60px;
+  margin: 0 auto;
+  -webkit-padding-start: 0px;
+  -webkit-padding-end: 0px;
 }
 
 .skateboards li {
   display: inline;
+  padding: 0 10px 0 10px
 }
 
 .skateboards img {
-  width: 7%;
+  width: 6%;
+}
+
+.skatewhite {
+    background-color: white;
+    padding: 10px 0px 10px 40px;
+
 }
 
 //form
 
-@media (max-width: 450px) {
-
-  .skateboards img {
-    display: block;
-    transform: rotate(90deg);
-    width: 15%;
-    margin: -130px auto;
-  }
+.whiteform {
+  background-color: white;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
 }
+
+button.submit {
+  background-color: $red;
+  width: 165px;
+  height: 30px;
+  color: white;
+  line-height: 23px;
+  vertical-align: middle;
+  border-radius: 0;
+  text-align: center;
+  float: right;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+ @media (max-width: 450px) {
+   div.skateboards,
+   .skateboards img {
+     display: none;
+   }
+ }
+
+//   .skateboards img {
+//     display: block;
+//     transform: rotate(90deg);
+//     width: 15%;
+//     margin: -130px auto;
+//   }
+// }
