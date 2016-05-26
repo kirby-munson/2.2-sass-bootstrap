@@ -5810,7 +5810,7 @@ button.close {
   .hidden-print {
     display: none !important; } }
 .bg {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/Users/kirbymunson/Documents/code/2.2-sass-bootstrap/images/bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/bg.jpg");
   position: relative;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -5821,7 +5821,7 @@ button.close {
   height: 56px;
   margin-left: 20px;
   margin-top: 55px;
-  position: relative;
+  position: absolute;
   width: 135px; }
 
 #base:before {
@@ -5830,7 +5830,7 @@ button.close {
   border-left: 20px solid #B4292E;
   content: "";
   height: 0;
-  left: 135px;
+  left: 0px;
   position: absolute;
   top: 0px;
   width: 0; }
@@ -5933,7 +5933,7 @@ div.circles {
   margin: 0 auto; }
 
 .header {
-  background-image: url("images/top-image.png");
+  background-image: url("../images/top-image.png");
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: 90px -85px;
@@ -5943,7 +5943,7 @@ div.circles {
   position: relative; }
   .header:before {
     content: "";
-    background-image: url("images/grid.png");
+    background-image: url("../images/grid.png");
     position: absolute;
     top: 0;
     bottom: 0;
@@ -5952,7 +5952,7 @@ div.circles {
 
 .logo_sticker {
   position: relative;
-  width: 320px;
+  width: 350px;
   padding: 20px 10px 10px 20px; }
 
 .cardwidth span.date {
@@ -5988,8 +5988,43 @@ div.car-3 {
   display: inline-block;
   padding: 5px 0px 5px 5px; }
 
+#base {
+  background: #B4292E;
+  display: inline-block;
+  height: 56px;
+  margin-left: 20px;
+  margin-top: 55px;
+  position: absolute;
+  width: 135px; }
+
+#base:before {
+  border-bottom: 28px solid transparent;
+  border-top: 28px solid transparent;
+  border-left: 20px solid #B4292E;
+  content: "";
+  height: 0;
+  left: 135px;
+  position: absolute;
+  top: 0px;
+  width: 0; }
+
+div.arrow {
+  position: absolute;
+  top: 0px;
+  left: -210px; }
+
+div.arrow span {
+  text-align: center;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: white;
+  vertical-align: middle;
+  line-height: 55px;
+  padding-left: 5px; }
+
 .border4 {
-  padding: 10px 10px 10px 0; }
+  padding: 10px 10px 10px 0;
+  position: relative; }
 
 .border3 {
   padding: 10px 10px 10px 0; }
@@ -6001,7 +6036,7 @@ div.car-3 {
   padding: 10px 5px 10px 0; }
 
 div.four {
-  background-image: url("images/sk8er-4.png");
+  background-image: url("../images/sk8er-4.png");
   background-size: cover;
   color: white;
   text-align: center;
@@ -6014,7 +6049,7 @@ div.four {
   padding-top: 15px; }
 
 div.three {
-  background-image: url("images/sk8er-3.png");
+  background-image: url("../images/sk8er-3.png");
   background-size: cover;
   color: white;
   text-align: center;
@@ -6026,7 +6061,7 @@ div.three {
   padding-top: 15px; }
 
 div.one {
-  background-image: url("images/sk8er-1.png");
+  background-image: url("../images/sk8er-1.png");
   background-size: cover;
   color: white;
   text-align: center;
@@ -6042,7 +6077,7 @@ div.one h2 {
   vertical-align: middle; }
 
 div.two {
-  background-image: url("images/sk8er-2.png");
+  background-image: url("../images/sk8er-2.png");
   background-size: cover;
   color: white;
   text-align: center;
